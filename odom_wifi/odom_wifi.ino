@@ -15,7 +15,7 @@
 
 const char* WIFI_SSID     = "EMB5325";
 const char* WIFI_PASSWORD = "cdti12345";
-const char* AGENT_IP      = "192.168.108.128";   // ROS 2 PC/RPi IP
+const char* AGENT_IP      = "192.168.1.143";   // ROS 2 PC/RPi IP
 uint32_t    AGENT_PORT    = 8888;               // must match micro_ros_agent
 
 // On ROS 2 machine:
@@ -63,8 +63,8 @@ float robotY = 0.0;
 float robotTheta = 0.0;
 
 // Robot constants
-const float WHEEL_DIAMETER = 12.1;        // cm (not used directly but OK)
-const float WHEEL_BASE = 63.85;           // cm (distance between wheels)
+const float WHEEL_DIAMETER = 4;        // cm (not used directly but OK)
+const float WHEEL_BASE = 30;           // cm (distance between wheels)
 const float COUNTS_PER_REVOLUTION = 54000;
 const float CM_PER_COUNT = 0.002274;      // Calibrated
 const float CM_TO_M = 0.01;
